@@ -32,13 +32,14 @@ public class HomeLoan extends Loan {
             System.out.println();
 
             double remainingPrincipal = principal - emi + (principal * rpp);
-            for (int i = 2; i <= repaymentPeriod; i++) {
+            for (int i = 2; i <= 60; i++) {
                 System.out.println("Month: " + i);
                 System.out.println("Principal: " + remainingPrincipal);
                 System.out.println("Interest: " + (remainingPrincipal * rpp));
                 System.out.println("EMI: " + emi);
                 System.out.println("Remaining Principal: " + (remainingPrincipal - emi + (remainingPrincipal * rpp)));
                 System.out.println();
+                remainingPrincipal = remainingPrincipal - emi + (remainingPrincipal * rpp);
             }
         } else {
             System.out.println("Invalid input values.");
