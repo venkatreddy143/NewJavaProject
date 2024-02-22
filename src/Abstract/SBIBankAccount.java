@@ -32,7 +32,7 @@ public class SBIBankAccount extends RBIBankAccount {
 
         if (sbiBalance >= sbiTotalSendAmt) {
 
-            System.out.println(sbiTotalSendAmt);
+            System.out.println("Sbi sent Balance to Hdfc Bank:"+ "  "+sbiTotalSendAmt);
         } else {
             System.out.println("Not Transfered");
         }

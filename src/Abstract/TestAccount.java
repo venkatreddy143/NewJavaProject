@@ -13,17 +13,14 @@ public class TestAccount {
         int hdfcTotalSendAmt= hdfcBankAccount.hdfcTotalSendAmt;
 
         if(sbiTotalSendAmt>hdfcTotalSendAmt){
-            System.out.println(hdfcTotalSendAmt);
+            System.out.println("HDFC sent balance to SBI Bank"+ " " +hdfcTotalSendAmt);
             int remAmt=sbiTotalSendAmt-hdfcTotalSendAmt;
-            System.out.println("send to the hdfc bank:"+remAmt);
-           int remainAmt=sbiBankAccount.sbiBalance-remAmt;
-
-            System.out.println(sbiBankAccount.sbiBalance);
-           sbiBankAccount.sbiBalance=remainAmt;
-           int newHdfcBankBalance=hdfcBankAccount.hdfcBalance+remAmt;
-
-            System.out.println(remainAmt);
-            System.out.println(newHdfcBankBalance);
+            System.out.println("Send This Remain Balance To HDFC Bank:"+ " " +remAmt);
+            int remainAmt=sbiBankAccount.sbiBalance-remAmt;
+            sbiBankAccount.sbiBalance=remainAmt;
+            int newHdfcBankBalance=hdfcBankAccount.hdfcBalance+remAmt;
+            System.out.println("After Sending The Amount To HDFC Bank"+" "+remainAmt);
+            System.out.println("After Receving The Amount From SBI Bank"+" "+newHdfcBankBalance);
 
         }if(hdfcTotalSendAmt>sbiTotalSendAmt){
             int remAmt2=sbiTotalSendAmt-hdfcTotalSendAmt;
