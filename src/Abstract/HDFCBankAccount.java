@@ -1,14 +1,14 @@
 package Abstract;
 
-public class SBIBankAccount extends RBIBankAccount {
-    int person1 =600;
-    int person2 =700;
-    int person3 =800;
+public class HDFCBankAccount extends RBIBankAccount {
 
-    int sbiTotalSendAmt = person1 + person2 + person3;
+    int person1 =400;
+    int person2 =500;
+    int person3 =600;
+    int hdfcTotalSendAmt = person1 + person2 + person3;
 
 
-    public SBIBankAccount(int sbiBalance, int hdfcBalance, int person1, int person2, int person3) {
+    public HDFCBankAccount(int sbiBalance, int hdfcBalance, int person1, int person2, int person3) {
         super(sbiBalance, hdfcBalance);
         this.person1 = person1;
         this.person2 = person2;
@@ -17,11 +17,11 @@ public class SBIBankAccount extends RBIBankAccount {
 
     @Override
     public String toString() {
-        return "SBIBankAccount{" +
+        return "HDFCBankAccount{" +
                 "person1=" + person1 +
                 ", person2=" + person2 +
                 ", person3=" + person3 +
-                ", sbiTotalSendAmt=" + sbiTotalSendAmt +
+                ", hdfcTotalSendAmt=" + hdfcTotalSendAmt +
                 ", sbiBalance=" + sbiBalance +
                 ", hdfcBalance=" + hdfcBalance +
                 '}';
@@ -30,9 +30,9 @@ public class SBIBankAccount extends RBIBankAccount {
     @Override
     public void sendAmount() {
 
-        if (sbiBalance >= sbiTotalSendAmt) {
+        if (sbiBalance >= hdfcTotalSendAmt) {
 
-            System.out.println(sbiTotalSendAmt);
+            System.out.println(hdfcTotalSendAmt);
         } else {
             System.out.println("Not Transfered");
         }

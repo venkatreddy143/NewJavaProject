@@ -1,11 +1,11 @@
 package Abstract;
 
 public abstract class RBIBankAccount {
-    protected double sbiBalance;
-    protected double hdfcBalance;
+    protected int sbiBalance;
+    protected int hdfcBalance;
 
 
-    public RBIBankAccount(double sbiBalance,double hdfcBalance) {
+    public RBIBankAccount(int sbiBalance,int hdfcBalance) {
         this.sbiBalance = sbiBalance;
         this.hdfcBalance=hdfcBalance;
     }
