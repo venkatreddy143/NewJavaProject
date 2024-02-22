@@ -7,6 +7,6 @@ public abstract class RBIBankService {
     //similar logic but use multiple process ---- concrete method.
     //same process but different logics ------ Abstract method.
     // java will create errors in child class ,only methods in main class.
-    // when we go Abstract method - re-usability & templates.
+    // when we go Abstract method - re-usability & templates & implement the inheritance.
 
 }
