@@ -11,7 +11,7 @@ public abstract class RBIBankAccount {
     }
     public abstract void sendAmount();
 
-    public double getBalance() {
+    public int getBalance() {
         return getBalance();
     }
 
