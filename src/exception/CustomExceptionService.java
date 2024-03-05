@@ -19,5 +19,4 @@ public class CustomExceptionService {
     public String unCheckException(){
         throw new RuntimeException("throwing uncheck exception");
     }
-
 }
